@@ -1,0 +1,92 @@
+[tool.poetry]
+name = "sentiment-analysis"
+version = "0.1.0"
+description = ""
+authors = ["RedhaWassim <rwasssim@gmail.com>"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.15"
+nltk = "^3.8.1"
+pandas = "^2.0.3"
+matplotlib = "^3.7.2"
+seaborn = "^0.12.2"
+tweety = "^0.1.6"
+pandas-stubs = "^2.0.3.230814"
+ipykernel = "^6.25.1"
+pyprojroot = "^0.3.0"
+fastavro = "^1.8.2"
+pymongo = "^4.5.0"
+supabase = "^1.0.4"
+boto3-stubs = "^1.28.49"
+fastapi = "^0.136.3"
+uvicorn = "^0.47.0"
+streamlit = "^1.57.0"
+
+
+[tool.poetry.group.test.dependencies]
+
+
+
+[tool.poetry.group.lint.dependencies]
+types-toml = "^0.10.8.7"
+types-redis = "^4.6.0.5"
+types-pytz = "^2023.3.0.1"
+black = "^23.7.0"
+types-chardet = "^5.0.4.6"
+types-protobuf = "^4.24.0.1"
+mypy-protobuf = "^3.5.0"
+
+
+[tool.poetry.group.test_integration.dependencies]
+python-dotenv = "^1.0.0"
+pytest-vcr = "^1.0.2"
+
+
+[tool.poetry.group.codespell.dependencies]
+codespell = "^2.2.5"
+
+
+[tool.poetry.group.scrape.dependencies]
+praw = "^7.7.1"
+
+[tool.poetry.group.typing.dependencies]
+mypy = "^1.5.1"
+types-pyyaml = "^6.0.12.11"
+types-requests = "^2.31.0.2"
+
+
+
+[tool.poetry.group.datapipeline.dependencies]
+kafka-python = "^2.0.2"
+pyspark = "^3.4.1"
+confluent-kafka = "^2.2.0"
+supabase = "^1.0.4"
+sqlalchemy = "^2.0.21"
+
+
+[tool.poetry.group.aws.dependencies]
+boto3 = "^1.28.40"
+
+
+[tool.poetry.group.model.dependencies]
+scikit-learn = "^1.3.0"
+spacy = "^3.6.1"
+langchain = "^0.0.295"
+
+
+[tool.poetry.group.dev.dependencies]
+transformers = "^5.9.0"
+torch = "^2.12.0"
+pytest = "^9.0.3"
+ruff = "^0.15.14"
+
+[tool.ruff]
+line-length = 95
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
