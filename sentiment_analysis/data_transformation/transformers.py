@@ -1,14 +1,7 @@
-import numpy as np
-import pandas as pd
 import spacy
 from langchain.embeddings import EdenAiEmbeddings
-from nltk.tokenize import RegexpTokenizer
 from sklearn.base import BaseEstimator, TransformerMixin
-from sklearn.compose import ColumnTransformer
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.impute import SimpleImputer
-from sklearn.pipeline import FeatureUnion, Pipeline
-from sklearn.preprocessing import MinMaxScaler
 
 nlp = spacy.load("en_core_web_sm")
 
@@ -56,7 +49,7 @@ class BoolValueTransformer(BaseEstimator, TransformerMixin):
     def _bool_to_int(self, text):
         try:
             return int(text)
-        except:
+        except (ValueError, TypeError):
             return text
 
     def fit(self, X, y=None):
