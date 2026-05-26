@@ -189,4 +189,3 @@ docker-compose.yml                # Runs API + dashboard together
 - [MLflow](https://mlflow.org/) + [Weights & Biases](https://wandb.ai/) — experiment tracking
 - [Poetry](https://python-poetry.org/) — dependency management
 - [Docker](https://www.docker.com/) — containerization
-- Original pipeline architecture by [RedhaWassim](https://github.com/RedhaWassim/Sentiment-Analysis)
